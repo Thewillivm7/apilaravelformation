@@ -23,7 +23,7 @@ Route::get('/showannonces/{id}',[AnnonceController::class,'show']);
 Route::get('/searchannonces/{titre}',[AnnonceController::class,'search']);
 
 
-Route::get('/commentaires',[CommentaireController::class,'index']);
+Route::get('/voircommentaires',[CommentaireController::class,'index']);
 Route::post('/addcommentaires',[CommentaireController::class,'create']);
 Route::put('/updatecommentaires/{id}',[CommentaireController::class,'update']);
 Route::delete('/deletecommentaires/{id}',[CommentaireController::class,'delete']);
